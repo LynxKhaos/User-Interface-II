@@ -1,4 +1,13 @@
-header {
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  border:1px solid red;
+}
+
+
+  header {
   background-color: lightgrey;
   padding: 20px;
   margin-bottom: 15px;
@@ -79,4 +88,18 @@ button a {
       border: lightgrey;
       
       
+  }
+  @media(max-width: 800px){
+
+  }
+  @media(max-width: 500px){
+    header{
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  nav {
+    flex-direction: column;
+  }
   }
