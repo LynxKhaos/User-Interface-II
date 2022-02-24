@@ -3,19 +3,19 @@
   padding: 0;
   margin: 0;
   max-width: 100%;
-  border:1px solid red;
+  
 }
 
 
   header {
-  background-color: lightgrey;
+  background-color:cyan;
   padding: 20px;
   margin-bottom: 15px;
 }
 footer {
-  background-color: lightgrey;
+  background-color: blueviolet;
   text-align: center;
-  padding: 20px;
+  padding: 7.5%;
 }
 .topsection {
   display: flex;
@@ -90,7 +90,12 @@ button a {
       
   }
   @media(max-width: 800px){
-
+    .row div{
+      width: 20%;
+    }
+    .topsection img{
+    width: 40%;
+    }
   }
   @media(max-width: 500px){
     header{
@@ -100,6 +105,31 @@ button a {
       align-items: center;
     }
   nav {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  button{
+    width:40%;
+    margin: 1% 0;
+  }
+  .topsection{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .topsection div{
+    width: 90%;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around ;
+  }
+  .row div{
+    width: 40%;
+    margin: 4% 0;
+
   }
   }
